@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumerica Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kumerica Restaurant</h1>
+        <nav>
+            <a href="index.html">Restaurant</a>
+            <a href="grocery.html">Grocery Store</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Welcome to Kumerica Restaurant</h2>
+        <p>Experience the authentic taste of Africa in the heart of the UK. We bring the best African dishes, filled with rich flavors and cultural heritage.</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="dish1.jpg" alt="Dish 1" class="gallery-item" onclick="enlargeImage(this)">
+            <img src="dish2.jpg" alt="Dish 2" class="gallery-item" onclick="enlargeImage(this)">
+            <img src="dish3.jpg" alt="Dish 3" class="gallery-item" onclick="enlargeImage(this)">
+            <img src="dish4.jpg" alt="Dish 4" class="gallery-item" onclick="enlargeImage(this)">
+        </div>
+    </section>
+
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <ul>
+            <li>Jollof Rice - £8.99</li>
+            <li>Grilled Fish - £10.99</li>
+            <li>Egusi Soup with Fufu - £9.99</li>
+            <li>Plantain and Beans - £7.99</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Send Message</button>
+            <p id="formMessage"></p> <!-- Message for feedback -->
+        </form>
+                <div id="formMessage" class="form-message"></div>
+    </section>
+
+    <section class="hours">
+        <h2>Opening Hours & Contact Information</h2>
+        <p><strong>Address:</strong> 123 Kumerica Lane, London, UK</p>
+        <p><strong>Email:</strong> contact@kumerica.co.uk</p>
+        <p><strong>Phone:</strong> +44 1234 567890</p>
+        <p><strong>Hours:</strong></p>
+        <ul>
+            <li>Monday - Friday: 10 AM - 10 PM</li>
+            <li>Saturday: 12 PM - 11 PM</li>
+            <li>Sunday: Closed</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4913.38195131175!2d-0.7374802832546016!3d51.99428586640416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487655d5ba4b30a7%3A0x22e74802ba3ef308!2sKumerica%20African%20Cuisine%20and%20Takeaway%20Joint!5e0!3m2!1sen!2suk!4v1730030869817!5m2!1sen!2suk" 
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+</body>
+</html>
